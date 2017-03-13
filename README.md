@@ -14,17 +14,17 @@ The tool can dump all the header sequences it finds, or just the summary.
 
 Example summary: 
 
-Count: 242	 Patterns: 0100 '\x01\x00'
+`Count: 242	 Patterns: 0100 '\x01\x00'`
 
-Count: 112	 Patterns: 5343 'SC'
+`Count: 112	 Patterns: 5343 'SC'`
 
-Count: 97	 Patterns: 0207 '\x02\x07'
+`Count: 97	 Patterns: 0207 '\x02\x07'`
 
-Count: 17	 Patterns: 001c '\x00\x1c'
+`Count: 17	 Patterns: 001c '\x00\x1c'`
 
-Count: 11	 Patterns: 0020 '\x00 '
+`Count: 11	 Patterns: 0020 '\x00 '`
 
-Count: 10	 Patterns: 0000 '\x00\x00'
+`Count: 10	 Patterns: 0000 '\x00\x00'`
 
 
 The patterns are the raw hex and text (python repr()) encoded versions of the sequence. 
@@ -48,17 +48,17 @@ There is also a cap function the display script.
 
 # quick start
 
-`folder = r"D:\my_folder"
+`folder = r"D:\my_folder"`
 
-seqs = process(folder)
+`seqs = process(folder)`
 
-show_results(seqs)`
+`show_results(seqs)`
 
 # typical use
 
-`folder = r"D:\my_folder"
+`folder = r"D:\my_folder"`
 
-seqs = process(folder, end=8, show_all=True)
+`seqs = process(folder, end=8, show_all=True)`
 
-show_results(seqs, cap=20)`
+`show_results(seqs, cap=20)`
 
