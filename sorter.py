@@ -36,11 +36,11 @@ def process(folder, start=0, end=16, show_all=False):
 	return seqs
 
 def show_results(seqs):
-
 	sorted_seqs = sorted(seqs.items(), key=operator.itemgetter(1), reverse=True)
 	for s in sorted_seqs:
 		byte_pattern = "".join("{:02x}".format(ord(c)) for c in s[0])
-		print "Count: {}\t Patterns: {} {}".format(s[1], byte_pattern, repr(s[0]))
+		if cap < s[1]:
+			print "Count: {}\t Patterns: {} {}".format(s[1], byte_pattern, repr(s[0]))
 
 	print
 
@@ -59,4 +59,4 @@ end = 2
 
 
 seqs = process(folder, start, end, show_all=True)
-show_results(seqs)
+show_results(seqs, cap=10)
