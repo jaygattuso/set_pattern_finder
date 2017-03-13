@@ -39,3 +39,19 @@ There are 4 set-able values in the main process
 There is also a cap function the display script. 
 
 `cap`: only displays pattern sets that have more than the cap as member files. Defaults to 0
+
+# quick start
+
+folder = r"D:\my_folder"
+
+seqs = process(folder)
+show_results(seqs)
+
+# typical use
+
+### Folder of interest
+folder = r"D:\my_folder"
+
+seqs = process(folder, end=8, show_all=True)
+show_results(seqs, cap=20)
+
