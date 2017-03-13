@@ -25,7 +25,7 @@ The patterns are the raw hex and text (python repr()) encoded versions of the se
 
 # How to use
 
-There are 4 settable values
+There are 4 set-able values in the main process
 
 `folder`: Just point this at your chosen folder. Use python os.walk to interate through subfolders. 
 
@@ -35,3 +35,7 @@ There are 4 settable values
 
 `show_all` : if true, dumps every sequence of every file as well as the summary. 
 
+
+There is also a cap function the display script. 
+
+`cap`: only displays pattern sets that have more than the cap as member files. Defaults to 0
