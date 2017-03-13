@@ -42,16 +42,13 @@ There is also a cap function the display script.
 
 # quick start
 
-folder = r"D:\my_folder"
-
+`folder = r"D:\my_folder"
 seqs = process(folder)
-show_results(seqs)
+show_results(seqs)`
 
 # typical use
 
-### Folder of interest
-folder = r"D:\my_folder"
-
+`folder = r"D:\my_folder"
 seqs = process(folder, end=8, show_all=True)
-show_results(seqs, cap=20)
+show_results(seqs, cap=20)`
 
